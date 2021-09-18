@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <script src="js/script.js" defer></script>
+    <title>Profile Page</title>
+    <link href="src/grid_style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="container">
+    <header class="header">
+        <nav class="menu">
+            <ul class="menu__items">
+                <li class="menu__item_highlighted">
+                    <div class="menu__item_inner">
+                        <img class="icon" src="src/imgs/icon_about_me.png" alt="person">
+                        <a class="menu__item-link_highlighted" href="#">Обо мне</a>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__item-inner">
+                        <img class="icon" src="src/imgs/icon_hobby.png" alt="heart">
+                        <a class="menu__item-link" href="#">Мое хобби</a>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__item-inner">
+                        <img class="icon_shifted" src="src/imgs/icon_video.png" alt="camera">
+                        <a class="menu__item-link" href="#">Любимые фильмы</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="photo-background">
+            <img class="photo-sea" align="middle" src="src/imgs/background.png" alt="Sea" title="Sea">
+        </div>
+    </header>
+    <div class="main-info">
+        <div class="about-me">
+            <img class="photo-profile__img" src="src/imgs/me.png" alt="Jane Doe" title="Jane Doe">
+            <div class="quote">
+                <p class="quote-text">
+                     Мы берем на себя много, потому что мало чего боимся
+                 </p>
+                 <p class="quote-author">
+                     — Том Демарко. Deadline
+                 </p>
+            </div>
+            <div class="name">
+                <h2 class="right-column-block__title_first"> 
+                    Jane Doe
+                </h2>
+                <div class="underline"></div>
+            </div>
+            <div class="left-column">
+                <div class="left-column-block">
+                    <h2 class="left-column-block__title">Любимые писатели:</h2>
+                    <ul class="left-column-block__item">
+                        <li>
+                            Айзек Азимов
+                        </li>
+                        <li>
+                            Говард Лавкрафт
+                        </li>
+                        <li>
+                            Дмитрий Глуховский
+                        </li>
+                        <li>
+                            Чак Паланик
+                        </li>
+                    </ul>
+                </div>
+                <div class="left-column-block">
+                    <h2 class="left-column-block__title">Любимые фильмы:</h2>
+                    <ol class="left-column-block__item">
+                        <li> 
+                            Шоу Трумэн
+                        </li>
+                        <li> 
+                            Малхолланд Драйв
+                        </li>
+                        <li> 
+                            Семь жизней
+                        </li>
+                        <li> 
+                            Гравитация
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="right-column-block">
+                    <p class="right-column-block__text_first">
+                        В 1930-е годы прошлого века физик Джордж Гамоу из университета штата Колорадо начал публиковать
+                        мини-сериал рассказов о неком мистере Томпкинсе, банковском клерке средних лет. Мистер Томпкинс, как
+                        явствовало из этих историй, интересовался современной наукой.
+                    </p>
+                </div>
+                <div class="right-column-block">
+                    <h2 class="right-column-block__title">
+                        Мое хобби
+                    </h2>
+                    <p class="right-column-block__text">
+                        Он регулярно посещал вечерние лекции местного профессора и, разумеется, всегда засыпал на самом
+                        интересном месте.
+                        А когда просыпался, то обнаруживал себя в каком-нибудь параллельном мире, где один из основных законов
+                        физики действовал не так, как в его мире.
+                    </p>
+                </div>
+                <div class="references">
+                    <a class="references" href="#">Напиши мне</a>
+                    <span clear:border-bottom> →</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overview">
+        <div class="overview-header">
+            Любимые фильмы
+        </div>
+        <div class="slider">
+            <div class="button-wrapper__prev">
+                <button class="prev-btn btn" id="prev-btn"><img src="src/imgs/left_arrow_only_new.png" alt="pr"></button>
+            </div>
+            <div class="review">
+                <div class="review-block">
+                    <img class="review-block__photo" src="src/imgs/film1.png" alt="escape">
+                    <div class="review-block__name">Побег из Шоушенка</div>
+                    <p class="review-block__text">
+                        Успешный банкир Энди Дюфрейн обвинен в убийстве собственной жены и ее любовника. Оказавшись в тюрьме под названием Шоушенк, он сталкивается с жестокостью и беззаконием, царящими по обе стороны решетки. Каждый, кто попадает в эти стены, становится их рабом до конца жизни. Но Энди, вооруженный живым умом и доброй душой, отказывается мириться с приговором судьбы и начинает разрабатывать невероятно дерзкий план своего освобождения.
+                    </p>
+                </div>
+                <div class="review-block"> 
+                    <img class="review-block__photo" src="src/imgs/film2.png" alt="loveis">
+                    <div class="review-block__name">Наркоз</div>
+                    <p class="review-block__text">
+                        Клай Бересфорд вынужден лечь под нож. Однако в процессе операции на сердце он неожиданно приходит в себя. Находясь в парализованном состоянии, будучи не в силах пошевелить ни рукой, ни ногой, он, тем не менее, чувствует каждое касание скальпеля к своей плоти…
+                    </p>
+                </div>
+                <div class="review-block">
+                    <img class="review-block__photo" src="src/imgs/film3.png" alt="couple">
+                    <div class="review-block__name">Астрал</div>
+                    <p class="review-block__text">
+                        Джош и Рене переезжают со своими детьми в новый дом, но не успевают толком распаковать вещи, как начинаются странные события. Необъяснимо перемещаются предметы, в детской звучат странные звуки… Но в настоящий ужас приходят родители, когда их десятилетний сын Далтон впадает в кому. Все усилия врачей в больнице помочь мальчику безуспешны.
+                    </p>
+                </div>
+                <div class="review-block"> 
+                    <img class="review-block__photo" src="src/imgs/film4.png" alt="space">
+                    <div class="review-block__name">Гравитация</div>
+                    <p class="review-block__text">
+                        Доктор Райан Стоун, блестящий специалист в области медицинского инжиниринга, отправляется в свою первую космическую миссию под командованием ветерана астронавтики Мэтта Ковальски, для которого этот полет — последний перед отставкой. Но во время, казалось бы, рутинной работы за бортом случается катастрофа. 
+                        Шаттл уничтожен, а Стоун и Ковальски остаются совершенно одни; они находятся в связке друг с другом, и все, что они могут, — это двигаться по орбите в абсолютно черном пространстве без всякой связи с Землей и какой-либо надежды на спасение.
+                    </p>
+                </div>
+                <div class="review-block"> 
+                    <img class="review-block__photo" src="src/imgs/film5.jpg" alt="districts">
+                    <div class="review-block__name">Районы</div>
+                    <p class="review-block__text">
+                        Алма-Ата, 1987 год. Главный герой фильма - 16-летний Арсен, который из пригорода переезжает в центр города и идет в новую школу. В новой школе он заводит дружбу с одноклассниками, активными участниками так называемых «Районовских движений». Вместе с этим, Арсен сталкивается с уличной, подростковой иерархией и насилием. И перед ним встает выбор, стать как все или остаться верным самому себе.
+                    </p>
+                </div>
+                <div class="review-block"> 
+                    <img class="review-block__photo" src="src/imgs/film6.jpg" alt="brother">
+                    <div class="review-block__name">Брат</div>
+                    <p class="review-block__text">
+                        Демобилизованный из армии Данила Багров возвращается в родной город. Скучная, однообразная жизнь провинции не может устроить крепкого русского парня, и он решает поехать в Питер, испытать себя. Тем более, что там, по слухам, уже давно процветает его старший брат. Но «новая русская» жизнь северной столицы оказывается слишком неожиданной, а родной брат Данилы зарабатывает на жизнь заказными убийствами. Даниле предстоит многое узнать… и со многими разобраться…
+                    </p>
+                </div>
+                <div class="review-block"> 
+                    <img class="review-block__photo" src="src/imgs/film7.jpg" alt="Kung-Fu Po">
+                    <div class="review-block__name">Кунг-фу панда</div>
+                    <p class="review-block__text">
+                        Главным героем здесь становится большая и неповоротливая панда по имени По. Вс. Жизнь наш новый друг мечтал о славе в сфере боевых искусств, но, как это часто бывает, жизнь его была очень далека от исполнения мечты. Да и сам медведь был мало похож на воина или хотя бы на ученика воина, ведь все знают, какие панды неуклюжие и толстые. Поэтому все, что оставалось нашему герою – это продавать лапшу и лелеять свою мечту.
+                        Но однажды великий мастер по имени Угвей выбирает Воина Дракона, который должен обрести невероятную силу и мощь и победить силы зла. Все ученики мастера, долго и упорно тренировавшиеся, находятся в предвкушении того, что учитель назовет его имя, а он выбирает…нашего героя!
+                    </p>
+                </div>
+                <div class="review-block"> 
+                    <img class="review-block__photo" src="src/imgs/film8.jpg" alt="RaM">
+                    <div class="review-block__name">Рик и Морти</div>
+                    <p class="review-block__text">
+                        Сериал посвящён злоключениям циничного безумного учёного Рика Санчеза и его наивного, капризного и неуверенного в себе внука Морти; создатель сериала Ройланд озвучивает обоих персонажей. Сериал, выросший из хулиганской анимационной пародии на франшизу «Назад в будущее», получил чрезвычайно высокие отзывы критики, особо отмечавшей его оригинальность, креативность и чувство юмора.
+                    </p>
+                </div>
+                <div class="review-block"> 
+                    <img class="review-block__photo" src="src/imgs/film9.jpg" alt="RingLord">
+                    <div class="review-block__name">Властелин колец</div>
+                    <p class="review-block__text">
+                        Всё началось с отливки великих колец. Три из них были отданы бессмертным эльфам, семь — пещерным гномам, а девять — королям людского рода. Но в пылающей пещере вулкана Ородруин Тёмный властелин Саурон тайно выковал ещё одно — Единое Кольцо, призванное подчинить себе все остальные. В этом Кольце была сосредоточена вся злоба и мощь повелителя Мордора, задумавшего положить конец свободе народов Средиземья и подчинить их себе навеки. Последний союз людей и эльфов выступил против армий Мордора. Правителю Гондора Исилдуру, сыну павшего в бою короля, удалось отрубить Саурону палец и завладеть Кольцом. Но оно поработило его волю и привело к гибели. Кольцо было потеряно и пролежало на дне реки две с половиной тысячи лет. Затем оно попало в руки существа по имени Голлум, который обладал им в течение столетий, пока Кольцо не было найдено хоббитом Бильбо Бэггинсом.
+                    </p>
+                </div>
+                <div class="review-block"> 
+                    <img class="review-block__photo" src="src/imgs/film10.jpg" alt="pulpfiction">
+                    <div class="review-block__name">Криминальное чтиво</div>
+                    <p class="review-block__text">
+                        Винсент Вега и Джулс Уиннфилд, бандиты на службе у Марселласа Уоллеса, должны забрать принадлежащий их боссу чемодан у Бретта и его компаньонов, предположительно вследствие нарушения последними договорённости. По дороге они обсуждают данное Уоллесом Винсенту поручение «вывести в свет» вечером того же дня Мию Уоллес, жену босса. Винсент рассказывает о своей недавней поездке в Европу. Идёт известный диалог о «Quarter Pounder», сэндвиче из McDonald's, который в Европе из-за метрической системы называют «Royal with Cheese». Добравшись до квартиры, после непродолжительного диалога и цитирования искажённого отрывка из проповедей пророка Иезекииля, Джулс и Винсент убивают Бретта и одного из его компаньонов.
+                    </p>
+                </div>
+                <div class="review-block"> 
+                    <img class="review-block__photo" src="src/imgs/film11.jpg" alt="live">
+                    <div class="review-block__name">Жить</div>
+                    <p class="review-block__text">
+                        В основе сюжета фильма — три параллельные истории, герои которых сталкиваются с тяжелейшим испытанием в жизни — потерей близких людей. Маленький мальчик теряет отца, молодая девушка — любимого человека, а у женщины средних лет погибают две дочери-двойняшки. В каждой истории свой финал, каждый выбирает сам, как жить дальше. Все три линии показаны на фоне современной жизни в российской глубинке, с самыми острыми бытовыми и социальными проблемами современной России.
+                    </p>
+                </div>
+                <div class="review-block"> 
+                    <img class="review-block__photo" src="src/imgs/film12.jpg" alt="sparta">
+                    <div class="review-block__name">300 спартанцев</div>
+                    <p class="review-block__text">
+                        Спартанцы отбивают многочисленные персидские атаки. Персы бросают в бой свои лучшие силы — колоссальных боевых слонов, закованного в броню носорога, колдунов с пороховыми бомбами и элитную гвардию с берсерком-великаном. В лагере Ксеркса монструозный палач с клинками вместо рук рубит головы потерпевшим неудачу военачальникам. На переговорах с Ксерксом Леонид отвергает предложение покориться и стать предводителем всей Греции, «понести боевое знамя Ксеркса в самое сердце Европы». Персы вновь идут в атаку, но все их усилия оказываются тщетными.
+                    </p>
+                </div>
+            </div>
+            <div class="button-wrapper__next">
+                <button class="next-btn btn" id="next-btn"><img src="src/imgs/right_arrow_only.png"></button>
+            </div>
+        </div>
+        <div class="overview-button">
+            <a class="overview-button__link" href="#">Все фильмы</a>
+        </div>
+        
+    </div>  
+    <div class="form-wrapper">
+        <div class="form-title">
+            <hr class="form-title__line">
+            <div class="form-title__text">
+                НАПИШИ МНЕ
+            </div>
+            <hr class="form-title__line">
+        </div>
+        <form class="form" action="#">
+            <div class="form__fields">
+                <ul class="form__list">
+                    <li class="form__item">
+                        <label class="label label_name" for="name">Ваше имя</label>
+                        <input class="form__field" type="text" id="name">
+                    </li>
+                    <li class="form__item">
+                        <label class="label label_email" for="mail">Ваш email</label>
+                        <input class="form__field" type="text" id="mail">
+                    </li>
+                    <li class="form__select">
+                        <label class="label label_select" for="country">Откуда вы?</label>
+                        <select class="form__select-country" id="country">
+                            <option class="form__select-option" value="Russia">Россия</option>
+                            <option class="form__select-option" value="England">Англия</option>
+                        </select>
+                    </li>
+                    <li class="form__radio">
+                        <label class="label label_radio" for="">Ваш пол</label>
+                        <div class="form__radio-wrapper">
+                            <input class="form__gender-item" type="radio" id="male" name="gender" value="male">
+                            <label class="form__gender-item-info" for="male">Мужской</label>
+                            <input class="form__gender-item" type="radio" id="female" name="gender" value="female">
+                            <label class="form__gender-item-info" for="female">Женский</label>    
+                        </div>
+                    </li>
+                    <li class="form__textarea">
+                        <label class="label label_textarea" for="message">Ваше сообщение</label>
+                        <textarea class="form__textarea-field" name="message" id="message"></textarea>
+                        <div class="message-error-message"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="submit-container__button">
+                <input class="submit-container__button-link" type="submit" value="Отправить">
+            </div>
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer__text">
+            2006-2018 Поволжский государственный технологический университет, ФГБОУ ВО «ПГТУ»
+        </div>
+    </footer>
+</body>
+
+</html>
+<!-- "-" - класс блока "__" - элемент блока "_" - модификатор (3-й элемент) -->

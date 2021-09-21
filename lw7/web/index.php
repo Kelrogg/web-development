@@ -7,7 +7,7 @@ if ($method === 'get')
 {
     mainPage();
 }
-else
+if ($method === 'post')
 {
     saveFeedbackPage();
 }

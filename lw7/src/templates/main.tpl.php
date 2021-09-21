@@ -49,7 +49,7 @@
                 <li class="form__radio">
                     <label class="label label_radio" for="">Ваш пол</label>
                     <div class="form__radio-wrapper">
-                        <input class="form__gender-item" type="radio" id="male" name="gender" value="male"/>
+                        <input class="form__gender-item" type="radio" id="male" name="gender" value="male" checked />
                         <label class="form__gender-item-info" for="male">Мужской</label>
                         <input class="form__gender-item" type="radio" id="female" name="gender" value="female"/>
                         <label class="form__gender-item-info" for="female">Женский</label>

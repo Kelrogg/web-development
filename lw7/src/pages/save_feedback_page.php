@@ -1,10 +1,8 @@
 <?php
 
-function removeExtraBlanksFrom(string $value): string
-{
-    $value = trim($value);
-    preg_replace('/\s+/', ' ', $value);
-    return $value;
+function removeExtraBlanks(string $value): string
+{    
+    return preg_replace('/\s+/', ' ', trim($value));
 }
 
 function setEmptyValErr(string $value, array &$errorArr): void
@@ -35,7 +33,7 @@ function saveFeedbackPage(): void
 {
     $name = trim(getPostParameter('name'));
     $email = trim(getPostParameter('email'));
-    $message = removeExtraBlanksFrom(getPostParameter('message'));
+    $message = removeExtraBlanks(getPostParameter('message'));
     $gender = getPostParameter('gender');
     $country = getPostParameter('country');
     $nameTemplate = '/^([а-яА-ЯЁёa-zA-Z]+)$/u';
@@ -75,7 +73,7 @@ function saveFeedbackPage(): void
     }
 
     renderTemplate("main.tpl.php", $response);
-    if ($response['valid'] === true)
+    if ($response['valid'])
     {
         unset($response['valid']);
         saveDataIntoFile($response);

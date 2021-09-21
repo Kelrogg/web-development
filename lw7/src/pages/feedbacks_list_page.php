@@ -29,7 +29,7 @@ function feedbacksListPage(): void
     $response = [];
     $method = getRequestMethod();
 
-    if ($method == 'post')
+    if ($method === 'post')
     {
         $email = $_POST['email'];
         $userDir = __DIR__ . "\..\..\data\\$email.txt";
